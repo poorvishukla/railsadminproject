@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'posts#index'
   resources :post_tags
   resources :posts
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
